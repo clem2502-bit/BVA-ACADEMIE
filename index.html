@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BVA Académie · Remplis ton agenda grâce à Instagram</title>
+<meta name="description" content="Un accompagnement de 2 mois pour les pros de la beauté qui veulent être visibles, attirer des clientes et les fidéliser.">
+<meta property="og:title" content="BVA Académie · Remplis ton agenda grâce à Instagram">
+<meta property="og:description" content="Un accompagnement de 2 mois pour les pros de la beauté qui veulent être visibles, attirer des clientes et les fidéliser.">
+<meta property="og:image" content="assets/images/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F2A7B8'/%3E%3Cpath d='M16 4c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z' fill='%23FFDD6B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Amtom";src:url("assets/fonts/Amtom.woff2") format("woff2"),url("assets/fonts/Amtom.otf") format("opentype");font-display:swap}
+:root{--rose-pale:#FBDDE3;--rose:#F2A7B8;--rose-fonce:#E48AA0;--jaune-pale:#FFF3B8;--jaune:#FFDD6B;--sable:#FFF8F3;--brun:#4A2C2A;--brun-doux:#7A5550;--blanc:#fff;
+--t:"Amtom","DM Serif Display",Georgia,serif;--b:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--brun);font-size:clamp(1rem,3.8vw,1.125rem);line-height:1.65;overflow-x:hidden;background:#fff}
+h1,h2,h3{font-family:var(--t);font-weight:400;line-height:1.2}
+h1{font-size:clamp(2rem,8vw,3.5rem)}h2{font-size:clamp(1.6rem,6vw,2.5rem);margin-bottom:24px}
+p{margin-bottom:1em}
+section{padding:64px 20px;position:relative;overflow:hidden}
+.w{max-width:1100px;margin:0 auto;position:relative;z-index:1}
+.n{max-width:640px;margin:0 auto}
+.c{text-align:center}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;padding:16px 32px;border-radius:999px;background:var(--rose);color:var(--brun);font:700 1.05rem var(--b);text-decoration:none;text-align:center;box-shadow:0 8px 20px rgba(228,138,160,.35);transition:.2s}
+.btn:hover{background:var(--rose-fonce);transform:translateY(-2px)}
+:focus-visible{outline:3px solid var(--brun);outline-offset:3px}
+.micro{font-size:.95rem;color:var(--brun-doux);margin-top:12px}
+.card{background:#fff;border-radius:24px;box-shadow:0 10px 30px rgba(74,44,42,.08);padding:28px 24px;position:relative}
+.ph{border-radius:24px;background:linear-gradient(135deg,var(--rose-pale),var(--jaune-pale));display:flex;align-items:center;justify-content:center;text-align:center;font-size:.85rem;color:var(--brun-doux);padding:16px}
+.ph img{width:100%;height:auto;border-radius:24px;display:block}
+.star{position:absolute;width:28px;height:28px;z-index:0;pointer-events:none}
+@media(prefers-reduced-motion:no-preference){.star{animation:fl 6s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-8px) rotate(12deg)}}
+.rv{opacity:0;transform:translateY(16px);transition:.7s}.rv.in{opacity:1;transform:none}}
+.wave{display:block;width:100%;height:32px;margin-bottom:-1px}
+/* fonds */
+#hero{background:linear-gradient(var(--rose-pale),#fff);min-height:88vh;display:flex;align-items:center}
+#hero .w{display:grid;gap:32px}
+#probleme,#offre,#parcours,#about,#faq,#preuves{background:#fff}
+#inaction,#transformation,#objections,#garantie{background:var(--jaune-pale)}
+#preuves{background:var(--jaune-pale)}
+#bascule{background:var(--rose-pale)}
+#tarif,#parcours{background:var(--sable)}
+#garantie{background:#fff}
+#about{background:var(--rose-pale)}
+#cta-final{background:linear-gradient(var(--rose),var(--rose-pale))}
+.big{font-family:var(--t);font-size:clamp(1.8rem,7vw,2.6rem);text-align:center;line-height:1.2;margin:32px 0;text-decoration:underline;text-decoration-color:var(--rose);text-decoration-thickness:6px;text-underline-offset:8px}
+#bascule strong{background:var(--rose-pale);padding:0 4px}
+#bascule{background:#fff}
+#bascule h2{font-size:clamp(1.8rem,7vw,2.8rem)}
+#offre .card{border:3px solid var(--rose);text-align:center;font-size:clamp(1.15rem,4.5vw,1.5rem);max-width:760px;margin:0 auto}
+#offre .card p{margin:16px 0 0}
+.wm{font-family:var(--t);font-size:1.4rem;color:var(--rose-fonce)}
+#transformation h2{font-size:clamp(2.4rem,11vw,4.5rem)}
+.tb{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:28px}
+.tb svg{width:28px;height:28px}
+/* frise */
+.tl{list-style:none;padding:0;position:relative;max-width:640px;margin:0 auto 32px}
+.tl:before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:3px;background:var(--rose)}
+.tl li{position:relative;padding-left:60px;margin-bottom:28px}
+.tl .num{position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--jaune);display:flex;align-items:center;justify-content:center;font-weight:700}
+.tl h3{font-family:var(--b);font-weight:700;font-size:1.15rem;margin-bottom:6px}
+.pl{list-style:none;padding:0}
+.pl li{position:relative;padding-left:32px;margin-bottom:12px}
+.pl li:before{content:"";position:absolute;left:0;top:.35em;width:18px;height:18px;background:var(--jaune);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+/* preuves */
+.car{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 0 16px;-webkit-overflow-scrolling:touch}
+.car .card{flex:0 0 85%;scroll-snap-align:center;font-style:italic}
+.car cite{display:block;font-style:normal;font-size:.9rem;color:var(--brun-doux);margin-top:12px}
+.car a{display:none;font-style:normal;font-size:.9rem;margin-top:8px}
+.car a.on{display:inline-block}
+.pas{display:grid;gap:12px;margin-top:24px}
+.pas div{background:var(--jaune);border-radius:999px;padding:14px 20px;text-align:center;font-weight:700}
+#lb{display:none;position:fixed;inset:0;background:rgba(74,44,42,.85);z-index:99;align-items:center;justify-content:center;padding:20px}
+#lb img{max-width:100%;max-height:100%;border-radius:16px}
+/* about */
+#about .w{display:grid;gap:28px;align-items:center;max-width:900px}
+#about .ph{border-radius:999px;width:220px;height:220px;margin:0 auto;overflow:hidden;padding:0}
+#about .ph img{height:100%;object-fit:cover;border-radius:999px}
+/* objections */
+#objections .card{margin-bottom:16px}
+#objections h3{font-size:1.25rem;margin-bottom:8px;padding-right:36px}
+#objections .card .star{width:18px;height:18px;right:16px;top:16px}
+/* tarif */
+#tarif .card{max-width:720px;margin:0 auto;padding-top:56px}
+.badge{position:absolute;top:-24px;right:8px;width:108px;height:108px;border-radius:50%;background:var(--jaune);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:.85rem;line-height:1.25;padding:12px;transform:rotate(8deg);box-shadow:0 8px 20px rgba(74,44,42,.12)}
+#garantie .card{border:3px dotted var(--rose);box-shadow:none;max-width:720px;margin:0 auto;text-align:center}
+/* faq */
+details{background:#fff;border-radius:24px;box-shadow:0 10px 30px rgba(74,44,42,.08);margin-bottom:12px}
+summary{list-style:none;cursor:pointer;min-height:56px;padding:14px 64px 14px 24px;position:relative;font-weight:700;display:flex;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:before,summary:after{content:"";position:absolute;right:26px;top:50%;width:14px;height:3px;background:var(--brun);border-radius:2px}
+summary:after{transform:rotate(90deg);transition:.2s}
+details[open] summary:after{transform:rotate(0)}
+details p{padding:0 24px;margin:0 0 20px;font-size:1rem}
+/* final */
+.urg{font-weight:700}
+footer{background:#fff;text-align:center;font-size:.9rem;padding:24px 20px calc(96px + env(safe-area-inset-bottom))}
+footer a{color:var(--brun);display:inline-block;padding:12px 4px}
+#sticky{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.92);padding:10px 16px calc(10px + env(safe-area-inset-bottom));transform:translateY(110%);transition:.3s}
+#sticky.on{transform:none}
+@media(max-width:767px){#sticky{display:block}}
+@media(min-width:768px){section{padding:88px 32px}.btn{width:auto;display:inline-flex}.car .card{flex-basis:calc(50% - 8px)}.pas{grid-template-columns:repeat(3,1fr)}#hero .w{grid-template-columns:1.1fr .9fr;align-items:center}footer{padding-bottom:32px}.c .btn{margin:0 auto}#about .w{grid-template-columns:240px 1fr}#about .ph{width:240px;height:240px}}
+@media(min-width:1100px){h1{font-size:3.5rem}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="st" viewBox="0 0 40 40"><path d="M20 2c1.5 10 8 16.5 18 18-10 1.5-16.5 8-18 18C18.500 28 12 21.500 2 20 12 18.500 18.500 12 20 2z" fill="#FFDD6B" stroke="#F2A7B8" stroke-width="2" stroke-linejoin="round"/></symbol>
+<symbol id="gl" viewBox="0 0 40 40"><rect x="14" y="4" width="12" height="10" rx="3" fill="#E48AA0"/><rect x="12" y="14" width="16" height="22" rx="4" fill="#F2A7B8"/></symbol>
+<symbol id="on" viewBox="0 0 40 40"><path d="M20 3c7 6 9 16 9 24a9 9 0 0 1-18 0c0-8 2-18 9-24z" fill="#F2A7B8"/></symbol>
+</defs></svg>
+
+<!-- 1 -->
+<section id="hero"><div class="w">
+<div class="rv">
+<h1>Ton agenda mérite d'être aussi plein que ton feed est beau</h1>
+<p style="margin-top:20px">Je t'accompagne, toi pro de la beauté, pour devenir visible sur les réseaux, attirer des clientes qui te ressemblent, les fidéliser et enfin vivre de ton métier. En 2 mois, avec moi à tes côtés. 🏆</p>
+<a class="btn cta" href="#" target="_blank" rel="noopener">Je réserve mon appel découverte 👑</a>
+<p class="micro">Gratuit, sans engagement, on voit ensemble si c'est fait pour toi</p>
+</div>
+<div class="ph rv" style="padding:0;overflow:hidden"><img src="assets/images/hero.png" width="1200" height="630" alt="Logo BVA Académie, Beauty Visibilité Académie"></div>
+</div></section>
+
+<svg class="wave" viewBox="0 0 1200 32" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0v16c200 24 400 24 600 8s400-16 600 0V0z" fill="#fff"/></svg>
+<!-- 2 -->
+<section id="probleme"><div class="n rv">
+<p style="font-size:1.25em">Tu es pro de la beauté, tes prestations sont impeccables, tes clientes repartent ravies</p>
+<p>Mais derrière ton écran, c'est une autre histoire</p>
+<p>Tu postes, tu postes encore, tu sacrifies tes soirées et tes weekends, et tu as l'impression de parler dans le vide. Quelques likes, deux ou trois vues, et toujours aucun message pour prendre rendez-vous</p>
+<p>Tu te demandes ce que tu fais de travers, tu regardes celles qui cartonnent en te disant « pourtant, je fais pareil »</p>
+<p>Pendant ce temps, ton agenda a des trous, les nouvelles clientes se font rares et celles que tu as ne reviennent pas toujours. Tu es fatiguée, un peu découragée, et tu te demandes si tu pourras vraiment vivre de ta passion</p>
+<p>Si tu te reconnais, respire</p>
+<p class="big">Ce n'est pas toi le problème</p>
+
+</div></section>
+
+<!-- 3 -->
+<section id="inaction"><svg class="star" style="right:24px;top:28px" aria-hidden="true"><use href="#st"/></svg>
+<div class="n rv"><div class="card">
+<p>Soyons honnêtes deux minutes, entre nous</p>
+<p>Si tu continues comme aujourd'hui, dans 6 mois tu risques d'être exactement au même endroit : mêmes creux dans l'agenda, même fatigue, même contenu qui ne rapporte rien</p>
+<p>Chaque semaine sans stratégie, c'est du temps et de l'énergie qui partent sans retour, chaque cliente qui ne revient pas, c'est un revenu qui s'évapore. Et la petite voix qui te dit « peut-être que ce n'est pas pour moi » devient de plus en plus forte</p>
+<p style="margin:0">Je ne te dis pas ça pour te mettre la pression, je te le dis parce que tu mérites mieux. On a rien sans rien, et le premier pas, c'est de décider que ça change ⭐️</p>
+</div></div></section>
+
+<!-- 4 -->
+<section id="bascule"><svg class="star" style="right:12px;top:20px;width:64px;height:64px;opacity:.7" aria-hidden="true"><use href="#st"/></svg>
+<div class="n rv">
+<h2>Et si le problème n'était pas que tu ne postes pas assez, mais que tu postes sans direction ?</h2>
+<p>Sur Instagram, ce qui marche, ce n'est ni la quantité ni le plus joli feed, c'est de savoir <strong>à qui tu parles, quoi dire, et quoi faire pour que celle qui te regarde ait envie de réserver</strong></p>
+<p>Tu n'as pas besoin de devenir influenceuse ni de danser en reel, tu as besoin d'une méthode claire, adaptée à ton métier, et de quelqu'un qui te dit exactement quoi faire, quand et pourquoi</p>
+<p>C'est exactement ce que je t'apporte, et je l'ai vu marcher plus vite que tu ne l'imagines</p>
+</div></section>
+
+<!-- 5 -->
+<section id="offre" style="background:var(--rose-pale)"><div class="w rv"><div class="card">
+<svg class="star" style="left:8px;top:8px" aria-hidden="true"><use href="#st"/></svg><svg class="star" style="right:8px;bottom:8px" aria-hidden="true"><use href="#st"/></svg>
+<div class="wm" aria-label="BVA Académie">BVA Académie</div>
+<p><strong id="offer-name">L'Accompagnement BVA</strong> : 2 mois à mes côtés pour les pros de la beauté qui veulent être visibles, attirer des clientes et les fidéliser, avec une méthode claire du début à la fin. 👑</p>
+</div></div></section>
+
+<!-- 6 -->
+<section id="transformation"><div class="n c rv">
+<h2>Imagine dans 2 mois</h2>
+<div class="tb"><svg aria-hidden="true"><use href="#st"/></svg><p>Tu ouvres Instagram sans boule au ventre. Tu sais quoi poster, pourquoi, et tu prends du plaisir à le faire. Ton contenu attire des personnes qui correspondent à ce que tu proposes.</p></div>
+<div class="tb"><svg aria-hidden="true"><use href="#gl"/></svg><p>Des messages arrivent. De nouvelles clientes te contactent parce qu'elles ont vu ton contenu et se disent « c'est elle que je veux ». Celles que tu as déjà reviennent, parlent de toi, te recommandent.</p></div>
+<div class="tb"><svg aria-hidden="true"><use href="#on"/></svg><p>Ton agenda se remplit, avec de bons retours. Tu n'as plus peur des semaines creuses. Tu te sens légitime, fière de ce que tu montres, et tu sais que tu peux vivre de ton métier. 😎</p></div>
+
+</div></section>
+
+<!-- 7 -->
+<section id="parcours"><div class="w">
+<h2 class="rv n">Ton parcours, de « je poste dans le vide » à « mon agenda se remplit »</h2>
+<ol class="tl rv">
+<li><span class="num">1</span><h3>Tu vois enfin clair</h3><p>On regarde ton compte ensemble, honnêtement. Tu comprends ce qui ne fonctionnait pas et ce qui va marcher. Le brouillard se lève, et tu sais où tu vas.</p></li>
+<li><span class="num">2</span><h3>Tu retrouves confiance dans ta création de contenu</h3><p>Fini le « est-ce que je poste comme il faut ? ». Tu as ta méthode et tes repères. Tu crées sans stress, et tes contenus commencent à attirer les bonnes personnes.</p></li>
+<li><span class="num">3</span><h3>Tu vois arriver tes premières nouvelles clientes</h3><p>Les messages tombent, les prospectes se présentent. C'est le moment où tu te dis « mais en fait, ça marche ». Et tu es accompagnée pour transformer chaque prospecte en cliente.</p></li>
+<li><span class="num">4</span><h3>Tu fidélises, et ton agenda se stabilise</h3><p>Tes clientes reviennent et te recommandent. Tu construis une clientèle qui reste, pas juste de passage.</p></li>
+<li><span class="num">5</span><h3>Tu passes un cap : tu crées ton propre produit digital</h3><p>En bonus, je t'apprends à créer ton produit digital. Tu poses les bases d'un revenu qui ne dépend pas que de tes heures en cabine.</p></li>
+</ol>
+<div class="card rv n"><h3 style="margin-bottom:16px">Et pendant tout le parcours</h3>
+<ul class="pl"><li>Un accompagnement personnalisé, tu n'es jamais seule face à tes questions</li><li>Des appels visio pour débloquer, ajuster, célébrer</li><li>Un suivi sur 2 mois pour ancrer chaque étape</li><li style="margin:0">1h d'accompagnement offerte chaque mois au bout de 3 mois pour consolider</li></ul></div>
+</div></section>
+
+<!-- 8 -->
+<section id="preuves"><div class="w">
+<h2 class="rv">Elles en parlent mieux que moi</h2>
+<div class="car rv">
+<div class="card"><p>« Pétard, j'ai eu 7 nouvelles prospectes en une semaine et demie grâce à ton accompagnement ! Ça fait qu'un mois qu'on travaille ensemble et j'ai déjà toutes ces nouvelles personnes. J'ai enfin compris ce qui ne fonctionnait pas sur mon compte et ce qui fonctionne maintenant. »</p><cite class="au"></cite></div>
+<div class="card"><p>« Juste pour te dire que ce mois-ci j'ai eu en tout 7 nouvelles clientes, et pourtant avant de me lancer avec toi je n'arrivais pas à en avoir plus d'une par mois !! Merci encore pour ce que tu m'as apporté jusqu'à maintenant, j'adore vraiment travailler avec toi. »</p><cite class="au"></cite><a href="assets/temoignages/temoignage-3.png" data-img>Voir le message d'origine</a></div>
+<div class="card"><p>« Parlons peu, parlons bien, je ne regrette ABSOLUMENT pas d'être dans ton académie, tu es présente h24, tu m'aides pour tout, même les choses les plus simples. J'ai déjà eu 2 accompagnements et rien à voir avec le tien, tu es géniale, et l'académie est tellement complète et pro, toujours des nouvelles choses. Je te remercie vraiment. »</p><cite class="au"></cite><a href="assets/temoignages/temoignage-6.jpeg" data-img>Voir le message d'origine</a></div>
+<div class="card"><p>« Ce que tu m'as donné, c'est incroyable. Ça va tellement m'aider dans ma création de contenu. Tu me l'as envoyé vendredi et j'ai déjà deux reels de prêts. »</p><cite class="au"></cite><a href="assets/temoignages/temoignage-2.jpeg" data-img>Voir le message d'origine</a></div>
+<div class="card"><p>« J'ai beau être ta cliente, mais là ce que tu viens de me donner, c'est une dinguerie !! J'ai regardé la vidéo et les questions à se poser, mais j'adore !!! Franchement, trop fan, je vais y appliquer directement. »</p><cite class="au"></cite><a href="assets/temoignages/temoignage-4.jpeg" data-img>Voir le message d'origine</a></div>
+<div class="card"><p>« Je ne sais pas quoi dire à part que j'adore !! Dans ta vidéo, tu expliques clairement les choses. Pour les questions à se poser, ça m'a trop aidée, je te jure, je ne vois plus les choses de la même façon. »</p><cite class="au"></cite><a href="assets/temoignages/temoignage-5.jpeg" data-img>Voir le message d'origine</a></div>
+</div>
+<div class="pas rv"><div>5 ans d'expérience dans la beauté</div><div>2 mois d'accompagnement</div><div>1h d'accompagnement offerte chaque mois au bout de 3 mois</div></div>
+</div></section>
+<div id="lb" role="dialog" aria-label="Message d'origine"><img alt="Capture du message d'une cliente"></div>
+
+<!-- 9 -->
+<section id="about"><div class="w rv">
+<div class="ph"><img src="assets/images/clem.jpg" width="900" height="1200" loading="lazy" style="object-position:50% 25%" alt="Portrait de Clem avec ses lunettes, lumière chaude" onerror="this.replaceWith(document.createTextNode('V7 · Ta photo'))"></div>
+<div><h2>Je suis Clémentine, mais tout le monde m'appelle Clem. 😎</h2>
+<p>Avant de t'accompagner, j'ai moi-même fait mes armes dans la beauté : CAP, Bac et niveau BTS en esthétique, 5 ans d'expérience. Je sais ce que c'est d'aimer son métier et de galérer à remplir son agenda.</p>
+<p>C'est pour ça que j'ai créé BVA Académie : pour t'apporter une méthode concrète, pensée pour les pros de la beauté, avec la bienveillance d'une grande sœur et la franchise de quelqu'un qui veut vraiment que tu réussisses.</p></div>
+</div></section>
+
+<!-- 10 -->
+<section id="objections"><div class="n">
+<h2 class="rv">Tes petites voix, on en parle</h2>
+<div class="card rv"><svg class="star" aria-hidden="true"><use href="#st"/></svg><h3>« J'ai peur de payer pour rien. »</h3><p style="margin:0">Je comprends, et c'est normal. C'est pour ça qu'on commence par un appel découverte gratuit : on regarde ta situation et je te dis franchement si je peux t'aider. Et tu n'es pas livrée à toi-même : tu es accompagnée pendant 2 mois, avec des appels visio et un suivi concret.</p></div>
+<div class="card rv"><svg class="star" aria-hidden="true"><use href="#st"/></svg><h3>« J'ai peur d'investir. »</h3><p style="margin:0">Investir dans ton activité, c'est un vrai pas. Mais regarde ce que te coûte déjà l'absence de résultats : le temps passé à poster pour rien, les créneaux vides dans ton agenda. Ici, tu as une méthode, un suivi et un paiement possible en une ou plusieurs fois.</p></div>
+<div class="card rv"><svg class="star" aria-hidden="true"><use href="#st"/></svg><h3>« J'ai déjà essayé de poster et ça n'a rien donné. »</h3><p style="margin:0">Justement. Poster ne suffit pas, il faut savoir quoi dire et à qui. Tu n'as pas raté, il te manquait la méthode.</p></div>
+<div class="card rv"><svg class="star" aria-hidden="true"><use href="#st"/></svg><h3>« Je ne suis pas à l'aise devant la caméra. »</h3><p style="margin:0">Tu n'as pas besoin de devenir influenceuse. On construit un contenu qui te ressemble.</p></div>
+</div></section>
+
+<!-- 11 -->
+<section id="tarif"><div class="w rv"><div class="card">
+<div class="badge">Tarif de lancement ⭐️</div>
+<h2>Ce que tu construis ici, tu le gardes</h2>
+<p>Cet accompagnement, ce n'est pas juste une formation. C'est 2 mois où tu es guidée pas à pas, avec des appels visio, un suivi personnalisé et un vrai coup d'accélérateur sur ta visibilité, ta clientèle et tes revenus.</p>
+<p>Ce que tu construis ici te sert pour les mois et les années qui viennent : une méthode que tu gardes, une clientèle qui grandit, un produit digital qui t'appartient.</p>
+<p>L'investissement se discute ensemble pendant l'appel découverte, avec des facilités de paiement en une ou plusieurs fois. Et pour les premières inscrites, il y a un <strong>tarif de lancement</strong> exclusif. ⭐️</p>
+<a class="btn cta" href="#" target="_blank" rel="noopener">Je découvre mon tarif de lancement 👑</a>
+</div></div></section>
+
+<!-- 12 -->
+<section id="garantie"><div class="w rv"><div class="card">
+<svg width="30" height="30" aria-hidden="true"><use href="#st"/></svg>
+<h2>Je ne te promets pas de miracle, je te promets de la présence</h2>
+<p style="margin:0">Une fois les 3 mois passés, je t'offre <strong>1h d'accompagnement chaque mois</strong> pour que tu continues d'avancer et de consolider tes résultats. Mon objectif, c'est que tu avances vraiment, pas que tu repartes avec un PDF que tu n'ouvres jamais. 🏆</p>
+</div></div></section>
+
+<!-- 13 -->
+<section id="faq" style="background:var(--sable)"><div class="n">
+<h2 class="rv">Tes questions, mes réponses</h2>
+<details><summary>C'est pour quels métiers ?</summary><p>Esthéticiennes, prothésistes ongulaires, lash artists, coiffeuses, maquilleuses, en salon, à domicile ou depuis chez toi, quel que soit ton âge.</p></details>
+<details><summary>Je débute sur les réseaux, c'est trop tôt ?</summary><p>Non. Beaucoup partent de zéro et c'est même plus simple : on construit sur de bonnes bases.</p></details>
+<details><summary>Combien de temps ça me prend par semaine ?</summary><p>On s'adapte à ton planning de pro. L'important, c'est la régularité, pas de passer tes soirées devant ton téléphone.</p></details>
+<details><summary>Comment se passe l'accompagnement concrètement ?</summary><p>2 mois, avec des appels visio et un suivi pour avancer étape par étape.</p></details>
+<details><summary>Je peux payer en plusieurs fois ?</summary><p>Oui, en une fois ou en plusieurs fois, on en parle lors de l'appel.</p></details>
+<details><summary>Et si ça ne marche pas pour moi ?</summary><p>Je m'engage à t'accompagner activement, et au bout de 3 mois, 1h d'accompagnement offerte chaque mois pour t'aider à ajuster.</p></details>
+<details><summary>Je n'ai pas beaucoup d'abonnés, ça marche quand même ?</summary><p>Oui. Ce qui compte, c'est d'attirer les bonnes personnes, pas d'en avoir beaucoup.</p></details>
+<details><summary>C'est quoi le produit digital du bonus ?</summary><p>Je t'apprends à créer ton propre produit digital, un revenu en plus à côté de tes prestations.</p></details>
+</div></section>
+
+<!-- 14 -->
+<section id="cta-final"><svg class="star" style="left:6%;top:40px" aria-hidden="true"><use href="#st"/></svg><svg class="star" style="right:8%;top:90px;width:22px;height:22px" aria-hidden="true"><use href="#gl"/></svg><svg class="star" style="left:10%;bottom:50px;width:22px;height:22px" aria-hidden="true"><use href="#on"/></svg><svg class="star" style="right:6%;bottom:40px" aria-hidden="true"><use href="#st"/></svg>
+<div class="n c rv">
+<h2>Dans 2 mois, tu peux être dans l'une de ces deux situations</h2>
+<p>La première : tu es toujours à poster dans le vide, à te demander ce qui ne va pas.</p>
+<p>La seconde : tu es fière de ton compte, tes messages arrivent, ton agenda se remplit et tu sais que tu peux vivre de ta passion.</p>
+<p>Entre les deux, il y a une décision. On a rien sans rien, et ce premier pas ne coûte qu'un appel. 🏆</p>
+<p class="urg" id="urgence">Le tarif de lancement est réservé aux premières inscrites. Ensuite, il n'existera plus.</p>
+<a class="btn cta" href="#" target="_blank" rel="noopener">Je réserve mon appel découverte 👑</a>
+<p class="micro" style="color:var(--brun)">Gratuit · Sans engagement · On regarde ta situation ensemble</p>
+</div></section>
+<footer>© BVA Académie · <a id="ig" href="#" target="_blank" rel="noopener">Instagram</a> · <a id="legal" href="#">Mentions légales</a></footer>
+
+<div id="sticky"><a class="btn cta" href="#" target="_blank" rel="noopener">Réserver mon appel 👑</a></div>
+
+<script>
+// ===== CONFIG : modifie ici =====
+const CONFIG = {
+  CTA_LINK: "https://ig.me/m/bva_academie",
+  OFFER_NAME: "L'Accompagnement BVA",
+  // Pour ajouter une date ou un nombre de places : modifie cette phrase
+  URGENCY_LINE: "Le tarif de lancement est réservé aux premières inscrites. Ensuite, il n'existera plus.",
+  INSTAGRAM_URL: "https://www.instagram.com/bva_academie",
+  TESTIMONIAL_AUTHOR: "Une cliente BVA Académie, pro de la beauté",
+  LEGAL_LINK: "#"
+};
+document.querySelectorAll(".cta").forEach(a=>a.href=CONFIG.CTA_LINK);
+document.getElementById("offer-name").textContent=CONFIG.OFFER_NAME;
+document.getElementById("urgence").textContent=CONFIG.URGENCY_LINE;
+document.getElementById("ig").href=CONFIG.INSTAGRAM_URL;
+document.getElementById("legal").href=CONFIG.LEGAL_LINK;
+document.querySelectorAll(".au").forEach(e=>e.textContent=CONFIG.TESTIMONIAL_AUTHOR);
+// FAQ : une seule question ouverte
+const ds=document.querySelectorAll("details");
+ds.forEach(d=>d.addEventListener("toggle",()=>{if(d.open)ds.forEach(o=>{if(o!==d)o.open=false})}));
+// Apparition au scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+// Barre collante : après le Hero, cachée sur la section 14
+const sb=document.getElementById("sticky");let pastHero=false,onFinal=false;
+const upd=()=>sb.classList.toggle("on",pastHero&&!onFinal);
+new IntersectionObserver(([e])=>{pastHero=!e.isIntersecting&&e.boundingClientRect.top<0;upd()}).observe(document.getElementById("hero"));
+new IntersectionObserver(([e])=>{onFinal=e.isIntersecting;upd()}).observe(document.getElementById("cta-final"));
+// Captures de témoignages : lien affiché seulement si le fichier existe
+const lb=document.getElementById("lb");
+document.querySelectorAll("a[data-img]").forEach(a=>{
+  const t=new Image();t.onload=()=>a.classList.add("on");t.src=a.getAttribute("href");
+  a.addEventListener("click",ev=>{ev.preventDefault();lb.querySelector("img").src=a.href;lb.style.display="flex"});
+});
+lb.addEventListener("click",()=>lb.style.display="none");
+</script>
+</body>
+</html>
